@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lameck Irungu</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header Section: Navigation -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="showSection('home')">Home</a></li>
+                <li><a href="#" onclick="showSection('about')">About</a></li>
+                <li><a href="#" onclick="showSection('projects')">Projects</a></li>
+                <li><a href="#" onclick="showSection('contact')">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Section: Home, About, Projects, Contact -->
+    <main>
+        <!-- Home Section -->
+        <section id="home">
+            <h1>Welcome to My Portfolio</h1>
+            <p>Hi, I'm Lameck Irungu, a Web3 Developer and Solidity Programmer.</p>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" style="display:none;">
+            <h2>About Me</h2>
+            <p>I am a Web3 developer and a passionate Solidity coder, with skills in smart contracts and blockchain technologies. I enjoy creating decentralized applications (dApps) and contributing to the blockchain ecosystem.</p>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" style="display:none;">
+            <h2>My Projects</h2>
+            <ul>
+                <li>Project 1: <a href="https://github.com/lameckirungu970/project1">Decentralized Voting System</a></li>
+                <li>Project 2: <a href="https://github.com/lameckirungu970/project2">Token Marketplace</a></li>
+                <li>Project 3: <a href="https://github.com/lameckirungu970/project3">Blockchain-based Identity Verification</a></li>
+            </ul>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" style="display:none;">
+            <h2>Contact Me</h2>
+            <p>Email: <a href="mailto:mugolameck@gmail.com">mugolameck@gmail.com</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/lameckirungu/">Lameck Irungu</a></p>
+        </section>
+    </main>
+
+    <script>
+	    function showSection(sectionId) {
+		    // Hide all sections
+		    const sections = document.querySelectorAll('main sectiono');
+		    sections.forEach(section => section.style.display = 'none');
+
+		    // Show the selected section
+		    const selectedSection = document.getElementById(sectionId);
+		    selectedSection.style.display = 'block';
+	    }
+    </script>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>© 2024 Lameck Irungu. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
+

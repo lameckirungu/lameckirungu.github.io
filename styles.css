@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #d6d6d6; /* Light gray for the background */
+    padding: 5px;
+    width: 100px; /* Set a fixed width for the sidebar */
+    height: 30vh; /* Full height */
+    position: fixed;
+    top: 30;
+    left: 10;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin-bottom: 5px;
+}
+
+nav ul li a {
+    display: block;
+    padding: 10px;
+    background-color: #8a8a8a; /* Gray background for the links */
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+nav ul li a:hover {
+    background-color: lightblue; /* Darker shade on hover */
+}
+
